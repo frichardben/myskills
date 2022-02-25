@@ -6,7 +6,8 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --watch-All",
+    "test:unit": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -17,6 +18,8 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@testing-library/jest-native": "^4.0.4",
+    "@testing-library/react-native": "^9.0.0",
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.39",
     "@types/react-native": "^0.66.16",
@@ -27,8 +30,5 @@
     "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.2",
     "typescript": "^4.5.5"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }

@@ -3,12 +3,9 @@ import {
   TouchableOpacity,
   Text,
   StyleSheet,
-  TouchableOpacityProps,
 } from "react-native";
+import { ButtonProps } from "../types";
 
-interface ButtonProps extends TouchableOpacityProps {
-  title: string;
-}
 
 export function Button({ title, ...rest }: ButtonProps) {
   return (

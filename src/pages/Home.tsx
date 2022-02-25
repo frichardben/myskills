@@ -9,11 +9,8 @@ import {
 } from "react-native";
 import { Button } from "../components/Button";
 import { SkillCard } from "../components/SkillCard";
+import { SkillData } from "../types";
 
-interface SkillData {
-  id: string;
-  name: string;
-}
 
 export function Home() {
   const [newSkill, setNewSkill] = useState("");
